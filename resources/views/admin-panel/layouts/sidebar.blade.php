@@ -30,9 +30,9 @@
                   </li>
                   <li><a><i class="fa fa-product-hunt"></i> Product <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="{{ route('product.create') }}">Create Product</a></li>
-                      <li><a href="{{ route('product.index') }}">View Products</a></li>
-                      <li><a href="{{ route('product.edit') }}">Edit Product</a></li>
+                      <li><a href="{{ route('products.create') }}">Create Product</a></li>
+                      <li><a href="{{ route('products.list') }}">View Products</a></li>
+                      <li><a href="#">Edit Product</a></li>
                     </ul>
                   </li>
                   
