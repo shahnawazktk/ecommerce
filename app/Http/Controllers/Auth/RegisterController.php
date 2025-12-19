@@ -21,6 +21,6 @@ return view('admin-panel.register');
         // $user->role=2;
         $user->save();
 
-        return redirect()->route('admin.login');
+        return redirect()->route('login');
     }
 }

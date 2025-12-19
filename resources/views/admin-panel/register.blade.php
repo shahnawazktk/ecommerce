@@ -46,7 +46,7 @@
 
               <div class="separator">
                 <p class="change_link">Already a member ?
-                  <a href="{{route('admin.login')}}" class="to_register"> Log in </a>
+                  <a href="{{route('login')}}" class="to_register"> Log in </a>
                 </p>
 
                 <div class="clearfix"></div>

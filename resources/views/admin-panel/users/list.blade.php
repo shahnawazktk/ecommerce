@@ -48,30 +48,25 @@
                             <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>First Name</th>
-                                    <th>Last Name</th>
-                                    <th>Username</th>
+                                    <th> Name</th>
+                                    <th>Email</th>
+                                    <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
+
+                               @foreach ($users as $k=>$user)
                                 <tr>
-                                    <td>1</td>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
+                                    <th scope="row">{{$k+1}}</th>
+                                    <td>{{$use->name}}</td>
+                                    <td>{{$use->email}}</td>
+                                    <td>
+                                        <a href="#" class="btn btn-primary"> <i class="fa fa-edit"></a>
+                                        <a href="#" class="btn btn-primary"><i class="fa fa-trash"></a>
+                                    </td>
+
                                 </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Larry</td>
-                                    <td>The Bird</td>
-                                    <td>@twitter</td>
-                                </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
